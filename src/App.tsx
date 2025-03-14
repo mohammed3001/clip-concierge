@@ -13,6 +13,7 @@ import PdfEditorPage from "./pages/PdfEditorPage";
 import ResumeBuilderPage from "./pages/ResumeBuilderPage";
 import LinkShortenerPage from "./pages/LinkShortenerPage";
 import NotesPage from "./pages/NotesPage";
+import ApiPage from "./pages/ApiPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,7 @@ const App = () => (
               <Route path="/resume-builder" element={<ResumeBuilderPage />} />
               <Route path="/link-shortener" element={<LinkShortenerPage />} />
               <Route path="/notes" element={<NotesPage />} />
+              <Route path="/api" element={<ApiPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
