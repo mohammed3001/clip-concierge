@@ -8,6 +8,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
 import Index from "./pages/Index";
 import VideoDownloaderPage from "./pages/VideoDownloaderPage";
+import ImageConverterPage from "./pages/ImageConverterPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/video-downloader" element={<VideoDownloaderPage />} />
+              <Route path="/image-converter" element={<ImageConverterPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
