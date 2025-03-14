@@ -9,6 +9,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import Index from "./pages/Index";
 import VideoDownloaderPage from "./pages/VideoDownloaderPage";
 import ImageConverterPage from "./pages/ImageConverterPage";
+import PdfEditorPage from "./pages/PdfEditorPage";
+import ResumeBuilderPage from "./pages/ResumeBuilderPage";
+import LinkShortenerPage from "./pages/LinkShortenerPage";
+import NotesPage from "./pages/NotesPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +29,10 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/video-downloader" element={<VideoDownloaderPage />} />
               <Route path="/image-converter" element={<ImageConverterPage />} />
+              <Route path="/pdf-editor" element={<PdfEditorPage />} />
+              <Route path="/resume-builder" element={<ResumeBuilderPage />} />
+              <Route path="/link-shortener" element={<LinkShortenerPage />} />
+              <Route path="/notes" element={<NotesPage />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
